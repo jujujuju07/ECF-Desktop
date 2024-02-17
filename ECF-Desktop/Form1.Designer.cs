@@ -29,27 +29,27 @@ namespace ECF_Desktop
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelTitre = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.labelTitreSortie = new System.Windows.Forms.Label();
+            this.labelTitreEntre = new System.Windows.Forms.Label();
+            this.labelTitreNomPrenom = new System.Windows.Forms.Label();
+            this.panelList = new System.Windows.Forms.Panel();
+            this.panelTitre.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelTitre
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(54)))), ((int)(((byte)(227)))));
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1254, 50);
-            this.panel1.TabIndex = 1;
+            this.panelTitre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(54)))), ((int)(((byte)(227)))));
+            this.panelTitre.Controls.Add(this.panel2);
+            this.panelTitre.Controls.Add(this.labelTitreSortie);
+            this.panelTitre.Controls.Add(this.labelTitreEntre);
+            this.panelTitre.Controls.Add(this.labelTitreNomPrenom);
+            this.panelTitre.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitre.Location = new System.Drawing.Point(0, 0);
+            this.panelTitre.Name = "panelTitre";
+            this.panelTitre.Size = new System.Drawing.Size(1254, 50);
+            this.panelTitre.TabIndex = 1;
             // 
             // panel2
             // 
@@ -60,71 +60,71 @@ namespace ECF_Desktop
             this.panel2.Size = new System.Drawing.Size(1254, 3);
             this.panel2.TabIndex = 3;
             // 
-            // label3
+            // labelTitreSortie
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1106, 8);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 31);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Sortie";
+            this.labelTitreSortie.AutoSize = true;
+            this.labelTitreSortie.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitreSortie.Location = new System.Drawing.Point(1106, 8);
+            this.labelTitreSortie.Name = "labelTitreSortie";
+            this.labelTitreSortie.Size = new System.Drawing.Size(85, 31);
+            this.labelTitreSortie.TabIndex = 2;
+            this.labelTitreSortie.Text = "Sortie";
             // 
-            // label2
+            // labelTitreEntre
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(677, 8);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 31);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Entre";
+            this.labelTitreEntre.AutoSize = true;
+            this.labelTitreEntre.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitreEntre.Location = new System.Drawing.Point(677, 8);
+            this.labelTitreEntre.Name = "labelTitreEntre";
+            this.labelTitreEntre.Size = new System.Drawing.Size(79, 31);
+            this.labelTitreEntre.TabIndex = 1;
+            this.labelTitreEntre.Text = "Entre";
             // 
-            // label1
+            // labelTitreNomPrenom
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(59, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(298, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nom Prénom du patient";
+            this.labelTitreNomPrenom.AutoSize = true;
+            this.labelTitreNomPrenom.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitreNomPrenom.Location = new System.Drawing.Point(59, 8);
+            this.labelTitreNomPrenom.Name = "labelTitreNomPrenom";
+            this.labelTitreNomPrenom.Size = new System.Drawing.Size(298, 31);
+            this.labelTitreNomPrenom.TabIndex = 0;
+            this.labelTitreNomPrenom.Text = "Nom Prénom du patient";
             // 
-            // panel3
+            // panelList
             // 
-            this.panel3.AutoScroll = true;
-            this.panel3.AutoSize = true;
-            this.panel3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel3.Location = new System.Drawing.Point(0, 50);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1254, 50);
-            this.panel3.TabIndex = 2;
+            this.panelList.AutoScroll = true;
+            this.panelList.AutoSize = true;
+            this.panelList.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.panelList.Location = new System.Drawing.Point(0, 50);
+            this.panelList.Name = "panelList";
+            this.panelList.Size = new System.Drawing.Size(1254, 50);
+            this.panelList.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1254, 711);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelList);
+            this.Controls.Add(this.panelTitre);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelTitre.ResumeLayout(false);
+            this.panelTitre.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelTitre;
+        private System.Windows.Forms.Label labelTitreSortie;
+        private System.Windows.Forms.Label labelTitreEntre;
+        private System.Windows.Forms.Label labelTitreNomPrenom;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelList;
     }
 }
 

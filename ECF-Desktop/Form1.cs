@@ -12,6 +12,8 @@ namespace ECF_Desktop
 {
     public partial class Form1 : Form
     {
+        private String adresse = "http://192.168.1.38";
+
         public Form1()
         {
             InitializeComponent();
@@ -35,7 +37,7 @@ namespace ECF_Desktop
             client.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
 
 
-            var json = await client.GetStringAsync("http://192.168.1.38/ECF-Web/api/listPatientDesktop.php");
+            var json = await client.GetStringAsync(adresse + "/ECF-Web/api/listPatientDesktop.php");
             var repositories = JsonConvert.DeserializeObject<List<Patient>>(json);
 
             foreach (var patient in repositories) 
@@ -46,6 +48,7 @@ namespace ECF_Desktop
                 panel.Location = new Point(0, 50);
                 panel.Dock = DockStyle.Bottom;
                 panel.Name = "panel11";
+                panel.Click += new EventHandler(click);
                 Label label = new Label();
                 label.Text = patient.nom + " " + patient.prenom;
                 label.AutoSize = true;
@@ -76,12 +79,21 @@ namespace ECF_Desktop
                 panelBottom.Name = "panelBottom11";
                 panelBottom.Size = new Size(1254, 3);
 
+                void click(object sender, EventArgs e)
+                {
+                    detail detail = new detail();
+                    detail.id = patient.id;
+                    detail.nomPrenom = patient.nom + " " + patient.prenom;
+                    detail.adresse = adresse;
+                    detail.ShowDialog();
+                }
+
                 panel.Controls.Add(panelBottom);
                 panel.Controls.Add(checkBoxSortie);
                 panel.Controls.Add(checkBoxEntre);
                 panel.Controls.Add(label);
 
-                panel3.Controls.Add(panel);                
+                panelList.Controls.Add(panel);                
             }          
         }
     }
